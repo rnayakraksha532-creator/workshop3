@@ -27,6 +27,10 @@ export default [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
       ],
+      // Enforce the repository's mechanical TypeScript formatting conventions.
+      eqeqeq: ["error", "always"],
+      "no-multi-spaces": "error",
+      "@typescript-eslint/explicit-module-boundary-types": "error",
     },
   },
 

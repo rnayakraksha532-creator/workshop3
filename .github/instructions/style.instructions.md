@@ -46,6 +46,12 @@ ALL UI components MUST use dark theme colors:
 - Use semantic grouping: layout, spacing, colors, typography
 - Keep utility combinations readable and maintainable
 
+## Comments and Documentation
+
+- Comment why a visual choice or workaround is necessary, especially when a utility combination is not self-explanatory.
+- Do not add comments that restate class names or describe obvious markup.
+- Keep style comments current with the implementation; update or remove them when the related classes change.
+
 ## Modern UI Patterns
 
 - Rounded corners: `rounded-lg`, `rounded-xl`, `rounded-2xl`

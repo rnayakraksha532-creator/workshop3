@@ -32,6 +32,18 @@ const games = await getAllGames(getDatabase());
 </Layout>
 ```
 
+Document every reusable component's `Props` interface with a short TSDoc/JSDoc description. Describe what each prop controls, whether it is optional, its default behavior, and any accessibility contract. Use comments to explain component intent or a non-obvious rendering decision, not to narrate the markup.
+
+```astro
+---
+/** Props for the game card rendered in a listing. */
+interface Props {
+  /** Game data displayed by the card. */
+  game: Game;
+}
+---
+```
+
 ## Layouts
 
 - Create reusable layout components in `src/layouts/`
@@ -120,3 +132,4 @@ There is no Svelte/React layer. When a page genuinely needs client behaviour, ad
 - Minimize client-side JavaScript — the default is zero JS shipped
 - Import and use global CSS styles from layouts
 - Always include a `data-testid` on interactive elements (see `ui.instructions.md`)
+- Keep comments current; update or delete comments in the same change as the code they describe.
